@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Complete the HTML here -->
+  <h1>Indiana Jones</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/raiders.jpg">
+        <h3>Raiders of the Lost Ark</h3>
+        <p>
+          Indiana Jones is hired by the U.S. Government to find the Ark of the
+          Covenant, which is believed to still hold the ten commandments. At the
+          same time, agents of Hitler are also after the Ark. Indiana Jones and
+          Marion, escape from various close calls in their quest for the Lost Ark.
+        </p>
+      </div>
+      <div class="column">
+        <img src="images/temple.jpg">
+        <h3>Temple of Doom</h3>
+        <p>
+          Indiana Jones arrives in India and is asked by villagers to find a mystical
+          stone and rescue their children from a cult practicing child slavery, black
+          magic, and rituals involving human sacrifice in honor of the goddess Kali.
+        </p>
+      </div>
+      <div class="column">
+        <img src="images/crusade.jpg">
+        <h3>The Last Crusade</h3>
+        <p>
+          We are joined again with Indiana Jones who sets out to rescue his father,
+          who vanished when searching for the Holy Grail. Indiana follows clues
+          left inside his father's notebook and ends up in Venice, where he gets
+          help from an academic. In search of answers they face against sinister
+          old enemies.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
